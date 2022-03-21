@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FashionApp.App">
+    <Application.Resources>
+        <Style TargetType="Label"  x:Key="newLabel" >
+            <Setter Property="FontFamily" Value="RobotoItalic"/>
+            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="FontSize" Value="50"/>
+        </Style>
+    </Application.Resources>
+</Application>
