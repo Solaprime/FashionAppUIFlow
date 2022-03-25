@@ -5,7 +5,6 @@ C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\bin\Debug\n
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.csproj.AssemblyReference.cache
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.AssemblyInfoInputs.cache
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.AssemblyInfo.cs
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.csproj.CoreCompileInputs.cache
@@ -13,3 +12,8 @@ C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\n
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.dll
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\ref\FashionApp.dll
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\FashionApp.pdb
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\Views\AppShell.xaml.g.cs
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\Views\CollectionPage.xaml.g.cs
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\Views\ExplorePage.xaml.g.cs
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\Views\ProfilePage.xaml.g.cs
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp\obj\Debug\netstandard2.0\Views\ShopPage.xaml.g.cs

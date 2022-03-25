@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PyD9XthNBiQL/jgkGHlwCD2va3gVn9lIKgf8bby7PzSLKMWs4HSgLG1fq6pWqhrrH8iven3dDgmOfQ3lYlvZjA==",
+  "dgSpecHash": "p6Qx8LGE8n6IJF1ogjwc9dX/1Fwcp0cy2OAWFwOutyFzixCL8ULqe8DoKN+/hnrmdhnmUa/oKrekHkWbX+FupQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Arinola\\Desktop\\FashionApp\\FashionApp\\FashionApp\\FashionApp.Android\\FashionApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Arinola\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.android.circlepageindicator\\1.1.1\\xamarin.android.circlepageindicator.1.1.1.nupkg.sha512",
+    "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.android.verticalviewpager\\1.1.2\\xamarin.android.verticalviewpager.1.1.2.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

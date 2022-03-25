@@ -1,16 +1,18 @@
-﻿using System;
+﻿using FashionApp.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace FashionApp
 {
     public partial class App : Application
-    {
+    {//
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+          //  MainPage = new AppShell();
+            MainPage = new ShopPage();
         }
 
         protected override void OnStart()

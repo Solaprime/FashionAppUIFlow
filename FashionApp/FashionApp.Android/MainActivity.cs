@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using CarouselView.FormsPlugin.Droid;
 
 namespace FashionApp.Droid
 {
@@ -15,6 +16,9 @@ namespace FashionApp.Droid
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            CarouselViewRenderer.Init();
+            // u must init the carousel view nugget in app delegate in IOs and main actibity in androiad
+            // to acces the carousel view property in each platform.
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

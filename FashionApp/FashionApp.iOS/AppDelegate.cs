@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using CarouselView.FormsPlugin.iOS;
 using Foundation;
 using UIKit;
 
@@ -22,6 +22,9 @@ namespace FashionApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            CarouselViewRenderer.Init();
+            // u must init the carousel view nugget in app delegate in IOs and main actibity in androiad
+            // to acces the carousel view property in each platform.
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

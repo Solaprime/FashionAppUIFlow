@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "P16FwgIuUCk7zvdMZWXXwUWlHntXQOPGQ5wFC1w/QDvnHMVakSKli480EkjWB62J3xDjeGWYAbh+knmmyJLzVg==",
+  "dgSpecHash": "tCpUjNrcgTNEsWAsIfAe2SBmd6HuPEils/DIoORKPCgyEbbNv6delxxiyYfmqjbqTlRjyjrY3qDh6yRvx6mHuQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Arinola\\Desktop\\FashionApp\\FashionApp\\FashionApp\\FashionApp.iOS\\FashionApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Arinola\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.essentials\\1.7.1\\xamarin.essentials.1.7.1.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\xamarin.forms\\5.0.0.2337\\xamarin.forms.5.0.0.2337.nupkg.sha512"

@@ -5,8 +5,23 @@
     <Application.Resources>
         <Style TargetType="Label"  x:Key="newLabel" >
             <Setter Property="FontFamily" Value="RobotoItalic"/>
-            <Setter Property="TextColor" Value="Red"/>
+            <Setter Property="TextColor" Value="DarkOliveGreen"/>
             <Setter Property="FontSize" Value="50"/>
         </Style>
+
+        <Style TargetType="Label"  x:Key="RobotoMedium" >
+            <Setter Property="FontFamily" Value="RobotoMedium"/>
+          
+        </Style>
+
+        <Style TargetType="Label"  x:Key="PlayFairBold" >
+            <Setter Property="FontFamily" Value="PlayFairBold"/>
+
+        </Style>
+        <Style TargetType="Label"  x:Key="PlayFairMedium" >
+            <Setter Property="FontFamily" Value="PlayFairMedium"/>
+
+        </Style>
+
     </Application.Resources>
 </Application>

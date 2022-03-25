@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DYl2R/0R2188B5H6TNCgpSG56kPs8xy1gL1U2yoRJYun5wIfIfYlkXw98B4GuiUiuTIw6Vca58Beb5qykD0mww==",
+  "dgSpecHash": "hMUesJEjQ/Xv5oUIw35cqja5uTEFFgOjsqATkGhBexQj6z+StEXorpLvaGgNblu/OmAZR/zsEY47cki19DU+iA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Arinola\\Desktop\\FashionApp\\FashionApp\\FashionApp\\FashionApp\\FashionApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Arinola\\.nuget\\packages\\carouselview.formsplugin\\6.0.0\\carouselview.formsplugin.6.0.0.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Arinola\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
