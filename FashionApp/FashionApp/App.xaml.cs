@@ -6,12 +6,13 @@ using Xamarin.Forms.Xaml;
 namespace FashionApp
 {
     public partial class App : Application
-    {//
+    {
         public App()
         {
             InitializeComponent();
 
-          //  MainPage = new AppShell();
+            // MainPage = new AppShell();
+            //MainPage = new ExplorePage();
             MainPage = new ShopPage();
         }
 

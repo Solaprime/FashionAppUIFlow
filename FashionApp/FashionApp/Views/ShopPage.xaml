@@ -2,161 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
-             x:Class="FashionApp.Views.ShopPage">
+             x:Class="FashionApp.Views.ShopPage"
+             xmlns:vm="clr-namespace:FashionApp.ViewModel" 
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+                >
+    <ContentPage.BindingContext>
+        <vm:ShopClassViewModel></vm:ShopClassViewModel>
+    </ContentPage.BindingContext>
+
     <Grid>
-        <Grid.RowDefinitions Height =" Auto, Auto, *"/>
-        <cv:CarouselViewControl x:Name="cvBanners" ShowIndicators ="true" IndicatorsShape="Circle"
-          CurrentPageIndicatorTintColor="Red" Orientation="Horizontal" InterPageSpacing="0"
-                                HeightRequest="270" ItemsSource="{Binding Banners}" HorizontalOptions="FillAndExpand"
-                               VerticalOptions="StartAndExpand" AnimateTransition="True"
-                                IndicatorsTintColor="LightGray" >
-            <cv:CarouselViewControl.ItemTemplate>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+           
+        <CarouselView ItemsSource="{Binding Carousels}" >
+            <CarouselView.ItemTemplate>
                 <DataTemplate>
-                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                        <Image Source="{Binding Image}" Aspect="Fill" HorizontalOptions="FillAndExpand"/>
-                        <Image Source="overlay.png" Aspect="Fill" HorizontalOptions="FillAndExpand"/>
-                        <StackLayout Margin="30,20, 0, 0" Spacing="15" HorizontalOptions="FillAndExpand"
-                                     VerticalOptions="FillAndExpand">
-                            <Label Text="{Binding Heading}" TextColor="White" FontSize="12"
-                                   FontFamily="{StaticResource  RobotoMedium }"/>
-                            <BoxView BackgroundColor="White" HorizontalOptions="Start" VerticalOptions="Start"
-                                     HeightRequest="50"/>
-                            <StackLayout>
-                                <Label Text="{Binding Message}" TextColor="White" FontSize="35" 
-                                       FontAttributes="{StaticResource PlayFairBold}"  />
-                                <Label Text="{Binding Caption}" TextColor="White" FontSize="12"
-                                       FontFamily="{StaticResource PlayFairMedium}"/>
-                            </StackLayout>
+                    <Frame HeightRequest="300">
+                    <StackLayout  >
+                            <Image Source="overlay.png"/>
 
-                        </StackLayout>
-                    </Grid>
-                </DataTemplate>
-            </cv:CarouselViewControl.ItemTemplate>
-        </cv:CarouselViewControl>
+                            <Image Source="{Binding ImageUrl}"/>
+                            <Label Text="{Binding SmallText}" FontSize="Body" />
 
-        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="End" Margin="30, 20">
-            <ImageButton Source="fav.png" Aspect="AspectFill" HeightRequest="32" WidthRequest="30" VerticalOptions="Center"/>
-            <ImageButton Source="cartFilled.png" Aspect="AspectFill" HeightRequest="32" WidthRequest="30" VerticalOptions="Center"/>
-
-        </StackLayout>
-        
-        <ScrollView Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Grid RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid RowSpacing="20" Margin="20, 0,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Label Text="Collections" TextColor="Black" FontSize="20" FontFamily="{StaticResource PlayFairBold}"/>
-                    <Label Text="ShowAll" TextColor="Black" FontSize="14"   VerticalOptions="Center" Opacity="0.5"
-                           HorizontalOptions="End" Margin="0,0, 30,0"/>
- 
-                    <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never"
-                                HorizontalOptions="StartAndExpand">
-                        <StackLayout BindableLayout.ItemsSource="{Binding CollectionList}" Orientation="Horizontal"
-                                     Spacing="20" VerticalOptions="StartAndExpand">
-                            <BindableLayout.ItemTemplate>
-                                <DataTemplate>
-                                    <StackLayout VerticalOptions="Start">
-                                        <StackLayout.GestureRecognizers>
-                                            <!--<TapGestureRecognizer Tapped="CollectionTapped"/>-->
-                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                                        </StackLayout.GestureRecognizers>
-                                        <Frame Padding="0" HasShadow="False" HorizontalOptions="Start" 
-                                               VerticalOptions="Start" CornerRadius="20">
-                                            <Image Source="{Binding Image} " Aspect="Fill" HorizontalOptions="FillAndExpand"
-                                                   VerticalOptions="FillAndExpand"/>
-                                        </Frame>
-                                        <Label Text="{Binding Name}" TextColor="Black" FontSize="15"/>
-                                        <Label Text="{Binding Path}" TextColor="Black" FontSize="15"
-                                               Margin="0, -7, 0, 0" FontFamily="{StaticResource PlayFairBold}"/>
-                                    </StackLayout>
-                                </DataTemplate>
-                            </BindableLayout.ItemTemplate>
-                            
-                        </StackLayout>
                         
-                    </ScrollView>
-                </Grid>
 
-
-               <!--second one-->
-
-                <Grid RowSpacing="20" Margin="20, 0,0,0" Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-
-                    </Grid.RowDefinitions>
-                    <Label Text="Collections" TextColor="Black" FontSize="20" FontFamily="{StaticResource PlayFairBold}"/>
-                    <Label Text="ShowAll" TextColor="Black" FontSize="14"   VerticalOptions="Center" Opacity="0.5"
-                           HorizontalOptions="End" Margin="0,0, 30,0"/>
-
-                    <ScrollView Orientation="Horizontal" Grid.Row="1" VerticalOptions="Start" VerticalScrollBarVisibility="Never"
-                                HorizontalOptions="StartAndExpand">
-                        <StackLayout BindableLayout.ItemsSource="{Binding CollectionList}" Orientation="Horizontal"
-                                     Spacing="20" VerticalOptions="StartAndExpand" x:Name="CollectionListStaackLayout">
-                            <BindableLayout.ItemTemplate>
-                                <DataTemplate>
-                                    <StackLayout VerticalOptions="Start" Orientation="Horizontal" WidthRequest="220">
-                                        <!--<StackLayout.GestureRecognizers>
-                                            <TapGestureRecognizer Tapped="CollectionTapped"/>
-                                        </StackLayout.GestureRecognizers>-->
-                                        <Frame Padding="0" HasShadow="False" HorizontalOptions="Start" 
-                                               VerticalOptions="Start" CornerRadius="20" HeightRequest="100">
-                                            <Image Source="{Binding Image} " Aspect="Fill" HorizontalOptions="FillAndExpand"
-                                                   VerticalOptions="FillAndExpand"/>
-                                        </Frame>
-                                        <StackLayout Margin="0, 12, 0, 0">
-                                        <Label Text="{Binding Name}" TextColor="Black" FontSize="15"/>
-                                        <Label Text="{Binding Price}" TextColor="Black" FontSize="15"
-                                               Margin="0, -7, 0, 0" FontFamily="{StaticResource PlayFairBold}"/>
-                                            <StackLayout Orientation="Horizontal" Margin="0, 15, 0, 0">
-                                                <Image Source="add.png" Aspect="Fill" VerticalOptions="Center"
-                                                       WidthRequest="13" HeightRequest="13">
-
-                                                </Image>
-                                                <Label Text="Add to Cart" TextColor="Black" FontSize="10"
-                                                       VerticalOptions="Center">
-                                                    
-                                                </Label>
-                                            </StackLayout>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </DataTemplate>
-                            </BindableLayout.ItemTemplate>
-
-                        </StackLayout>
-
-                    </ScrollView>
-                </Grid>
-            </Grid>
-             
-        </ScrollView>
-        
-        
-        
-        
-        
-        
-        
-        
+                    </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <!--<CollectionView ItemsSource="{Binding Carousels}">
+            <CollectionView.ItemTemplate >
+                <DataTemplate>
+                    <StackLayout>
+                    <Frame HeightRequest="300" />
+                        <Image Source="{Binding ImageUrl}"/>
+                        <Label Text="{Binding LargeText}"/>
+                        <Label Text="{Binding SmallText}"/>
+                        <Label Text="{Binding MediumText}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>-->
     </Grid>
-    <!--   note the binding banners in the itemspource property of the carouselViewControl-->
-    <!--   note the binding image in the data template property of the carouselViewControl.itemTamplate-->
-    <!--   note the binding image in the data template property of the carouselViewControl.itemTamplate-->
-    <!--   note the binding heading in the data template property of the carouselViewControl.itemTamplate-->
-    <!--   i improvised on the fontfamily property of the label  -->
-<!--``confirm the height request property of the boxview-->
-    <!--    innermost stacklAyput-->
-           <!--`the binding the font family-->
-    
-    <!-- the scroll view can be improvised with the  collection view-->
-
-    <!-- for the scroll view    check the binding, tapgestures-->
 </ContentPage>
     
