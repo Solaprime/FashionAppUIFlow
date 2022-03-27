@@ -166,4 +166,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\heeledShoe.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\summerCol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\watches.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\womenCol.png" />
+  </ItemGroup>
 </Project>

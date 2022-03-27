@@ -1,12 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FashionApp.Views.ExplorePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to the explore page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="FashionApp.Views.ExplorePage"
+             xmlns:vm="clr-namespace:FashionApp.ViewModel">
+    <ContentPage.BindingContext>
+        <vm:ExplorePageViewModel/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="0.*"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Explore" HorizontalOptions="StartAndExpand" Style="{StaticResource BigBoldText}"  VerticalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Row="1" >
+                <ImageButton Source="fav.png"/>
+                <ImageButton Source="cartFilled.png"/>
+            </StackLayout>
+        </Grid>
+
+        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="Explore" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End" Padding="15" Margin="180, 0, -10, 0">
+                <ImageButton Source="fav.png"/>
+                <ImageButton Source="cartFilled.png"/>
+            </StackLayout>
+        </StackLayout>-->
+  
+        <ScrollView Grid.Row="1">
+            <CollectionView ItemsSource="{Binding Explores}">
+
+                <CollectionView.ItemTemplate>
+                 
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding ImageUrl}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="Fill"/>
+                            <StackLayout Margin="20, 90,10, 10" HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding SubTag}" Style="{StaticResource ExploreLargeText}"/>
+                                <Label Text="{Binding Tag}"  Style="{StaticResource ExploreLargeText}"/>
+                                <Label Text="{Binding Description}"  Style="{StaticResource ExploreMediumText}"/>
+                            </StackLayout>
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </Grid>
+   
 </ContentPage>

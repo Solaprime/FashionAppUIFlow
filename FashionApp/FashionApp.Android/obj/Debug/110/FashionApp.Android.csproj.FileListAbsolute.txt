@@ -655,3 +655,6 @@ C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj\Debug\110\res\drawable\classic.png
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj\Debug\110\res\drawable\floral.png
 C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj\Debug\110\res\drawable\heeledshoe.png
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj\Debug\110\res\drawable\summercol.png
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj\Debug\110\res\drawable\womencol.png
+C:\Users\Arinola\Desktop\FashionApp\FashionApp\FashionApp\FashionApp.Android\obj\Debug\110\res\drawable\watches.png

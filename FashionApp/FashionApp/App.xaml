@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FashionApp.App">
     <Application.Resources>
+  
         <Style TargetType="Label"  x:Key="newLabel" >
             <Setter Property="FontFamily" Value="RobotoItalic"/>
             <Setter Property="TextColor" Value="DarkOliveGreen"/>
@@ -23,5 +24,31 @@
 
         </Style>
 
+        <Style TargetType="Label" x:Key="BigBoldText" BasedOn="{StaticResource PlayFairBold}">
+            <Setter Property="FontSize"   Value="20"/>
+            <Setter Property="TextColor"  Value="Black"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+        <Style TargetType="Label" x:Key="WeakBoldText" BasedOn="{StaticResource PlayFairMedium}">
+            <Setter Property="TextColor"  Value="Wheat"/>
+            <Setter Property="FontSize"  Value="10"/>
+      
+        </Style>
+        <Style TargetType="Label" x:Key="ProductText" BasedOn="{StaticResource RobotoMedium}">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <Style  TargetType="Label" x:Key="ExploreText" BasedOn="{StaticResource PlayFairBold}">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="ExploreLargeText" BasedOn="{StaticResource ExploreText}">
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="ExploreMediumText" BasedOn="{StaticResource ExploreText}">
+            <Setter Property="FontSize" Value="10"/>
+        </Style>
     </Application.Resources>
 </Application>

@@ -22,10 +22,10 @@ namespace FashionApp.Services
         public List<Product> GetNewTrends()
         {
             return new List<Product>() {
-           new Product{ImageUrl="heeled,png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m},
-           new Product{ImageUrl="heeled,png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m},
-           new Product{ImageUrl="heeled,png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m},
-           new Product{ImageUrl="heeled,png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m}
+           new Product{ImageUrl="heeledShoe.png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m},
+           new Product{ImageUrl="heeledShoe.png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m},
+           new Product{ImageUrl="heeledShoe.png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m},
+           new Product{ImageUrl="heeledShoe.png", ProdcutName = "Biege Heeled Shoe", Price= 234.6m}
 
            };
         }

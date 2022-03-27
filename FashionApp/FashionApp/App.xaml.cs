@@ -11,9 +11,9 @@ namespace FashionApp
         {
             InitializeComponent();
 
-            // MainPage = new AppShell();
+             MainPage = new AppShell();
             //MainPage = new ExplorePage();
-            MainPage = new ShopPage();
+           // MainPage = new ShopPage();
         }
 
         protected override void OnStart()

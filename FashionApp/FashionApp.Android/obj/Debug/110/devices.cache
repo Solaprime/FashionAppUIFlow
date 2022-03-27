@@ -1,1 +1,1 @@
-<Devices><Device id="05072339CD004171"><ResultingAbi>arm64-v8a</ResultingAbi><SdkVersion>28</SdkVersion></Device></Devices>
+<Devices><Device id="05072339CD004171"><ResultingAbi>arm64-v8a</ResultingAbi><SdkVersion>28</SdkVersion></Device><Device id="R7SRC1EQ7TM"><ResultingAbi>armeabi-v7a</ResultingAbi><SdkVersion>30</SdkVersion></Device></Devices>
